@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppLayout } from "@/components/AppLayout";
 import Dashboard from "./pages/Dashboard";
 import NewAssessment from "./pages/NewAssessment";
+import Assessments from "./pages/Assessments";
+import AuditTrail from "./pages/AuditTrail";
+import Reports from "./pages/Reports";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +23,9 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/assessment/new" element={<NewAssessment />} />
+            <Route path="/assessments" element={<Assessments />} />
+            <Route path="/audit-trail" element={<AuditTrail />} />
+            <Route path="/reports" element={<Reports />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AppLayout>
