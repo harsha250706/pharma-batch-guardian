@@ -9,6 +9,7 @@ import NewAssessment from "./pages/NewAssessment";
 import Assessments from "./pages/Assessments";
 import AuditTrail from "./pages/AuditTrail";
 import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/assessments" element={<Assessments />} />
             <Route path="/audit-trail" element={<AuditTrail />} />
             <Route path="/reports" element={<Reports />} />
+            <Route path="/settings" element={<Settings />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AppLayout>
